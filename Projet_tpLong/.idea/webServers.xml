@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a1b5360e-0e6a-4516-bd75-faba31a5af68" name="local" url="http://localhost:63342/">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+      <webServer id="729d4887-7dca-41c8-93c2-5b4589000e3f" name="timunix" url="http://timunix2.csfoy.ca/~dgdionne">
+        <fileTransfer rootFolder="/home/2021/dgdionne" accessType="SFTP" host="timunix2.csfoy.ca" port="22" sshConfigId="e018409b-4bd9-4ef3-ba81-43bfbd8c74ad" sshConfig="dgdionne@timunix2.csfoy.ca:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

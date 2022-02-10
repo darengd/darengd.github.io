@@ -1,0 +1,16 @@
+/***********************************************************************************************
+Nom de la page :  font.css
+Description :  feuille de style pour l'interface pour les fonts
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-04-15
+***********************************************************************************************/
+@font-face
+{
+    font-family: 'Manjari';
+    src: url(../font/Manjari-Regular.ttf);
+}
+@font-face
+{
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Regular.ttf);
+}

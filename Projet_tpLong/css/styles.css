@@ -1,0 +1,690 @@
+@charset "utf-8";
+/* ---------------------
+GOOGLE FONTS
+----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -----------------------
+RÉINITIALISATION
+------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----------------------
+CHARTE TYPO
+------------------------ */
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: black;
+  line-height: 1;
+  scroll-behavior:smooth
+}
+/* -----------------------------
+STYLES GÉNÉRIQUES
+-------------------------------- */
+/* Liens généraux */
+
+.menu__item a:link, .menu__item a:visited {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(255, 49, 49);
+  color: white;
+  font-weight:700;
+  text-decoration: none;
+}
+
+.menu__item a:hover, .menu__item a:active {
+  background-color: rgb(216, 27, 27); 
+}
+
+.menu__item:first-child a:link, .menu__item:first-child a:visited {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 32); 
+  color: rgb(255, 49, 49);
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.menu__item:first-child a:hover, .menu__item:first-child a:active {
+  background-color:rgb(58, 58, 58);;
+}
+
+.article-source__a:link, .article-source__a:visited {
+  color: rgb(255, 49, 49);
+  font-weight: 600;
+}
+
+.article-source__a:hover, .article-source__a:active {
+  color: rgb(216, 27, 27);
+}
+
+
+
+
+/* Titres et sous-titres */
+.titre-principal {
+  position: absolute;
+  font-size: 11vw; 
+  text-transform:uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: #333 2px 2px 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.titre-secondaire {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.slogan {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:60%;
+  left: 50%;
+  font-size: 3.7vw; 
+  font-weight: 500;
+  text-align: center;
+  color: rgb(255, 49, 49);
+  text-shadow: rgb(255, 255, 255) 2px 2px 2px;
+}
+
+.slogan-secondaire {
+
+  margin-top: 2em;
+  font-size: .8em;
+  font-style: italic;
+}
+
+h3 {
+  padding: 0.9em 0 .3em 0;
+  align-self: flex-start;
+  font-size: 1.5em;
+}
+/* Vidéos */
+iframe {
+  width:100%;
+  height:550px;
+}
+
+/* Images */
+.image-entete img {
+  width: 100%;
+  vertical-align: bottom;
+  margin-top: 140px;
+}
+/* ----------------------------------
+NAVIGATION PRINCIPALE
+------------------------------------- */
+header {
+  position: relative;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 35px;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+}
+
+.sous-menu {
+  display: none;
+  position: absolute;
+  list-style-type:none;
+  min-width: 100%;
+  z-index: 1;
+
+}
+
+.sous-menu a {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: rgb(32, 32, 32); 
+}
+  
+.sous-menu a:hover {background-color:rgb(216, 27, 27)}
+  
+.menu__item:hover .sous-menu {
+  display: block;
+}
+
+/* -------------------
+PAGE ACCUEIL
+---------------------- */
+.main-accueil {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Les liens vers les articles depuis l'accueil */
+
+.article__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+
+.menu-article__item {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0.5%;
+  position: relative;
+  box-shadow: #666 2px 2px 4px;
+}
+
+.menu-article__lien {
+  display: block; /* pour que le lien prenne la taille de l'item */
+  width: 100%;
+  height: 100%;
+}
+
+.menu-article__bloc-titre {
+  width: 90%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  margin-left: 0px;
+  transition: all .3s ease-out;
+  z-index: 99;
+}
+
+
+.menu-article__lien:hover .menu-article__bloc-titre {
+  display: block;
+  background: rgba(0, 0, 0, 0);
+}
+
+.menu-article__lien:hover h4 {
+  color: rgb(255, 49, 49);
+}
+
+h4 {
+  color: white;
+  font-size: 5vw;
+}
+
+.menu-article__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter .08s;
+}
+
+.menu-article__lien:hover .menu-article__img {
+  filter: brightness(40%);
+}
+
+.menu-article__img:hover .menu-article__p {
+  visibility:visible;
+  opacity: 1;
+}
+
+.menu-article__lien {
+  text-decoration: none;
+}
+
+
+/* --------------------------
+PAGES SUJET
+----------------------------- */
+article {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0 3em 0;
+}
+
+.article__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0em 0 2em 0;
+}
+
+.article__p {
+  font-family: Raleway;
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.article-source__div {
+  display: flex;
+  padding: 0.9em 0 0em 0;
+}
+
+.article-source__div a {
+  margin-left: 5px;
+}
+
+.article-source__div p {
+  font-weight: 600;
+}
+
+.article__footer {
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  margin-top: 1.5em;
+}
+
+.article__footer time  {
+  margin-left: 3px;
+}
+article :first-child.article-lettre__p:first-letter {
+
+  display:block;
+  float:left;
+  margin-top:5px;
+  color: rgb(255, 49, 49);
+  font-weight: bold;
+  margin-right: .2em;
+  font-size: 2.8em;
+}
+
+article :first-child.article-lettre__p {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-family: "raleway";
+}
+/* ----------------------
+PAGE À PROPOS
+------------------------- */
+.apropos__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 3em 0;
+}
+
+figure {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figcaption {
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  color: white;
+  background-color: rgb(255, 49, 49);
+  padding: .7em 0 .7em 0;
+}
+
+figcaption span {
+  display: flex;
+  width: 10px;
+}
+
+/* -------------------
+PAGE CONTACT
+---------------------- */
+.contact__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 3em 0;
+}
+
+.contact__form{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 49, 49);
+  border-radius: 15px;
+} 
+
+.fieldset-contact-interieur {
+  padding: 0.5em;
+}
+
+.contour__input {
+  margin: 0.9em 0 0.9em 0;
+}
+
+.contact__fieldset:nth-child(1) .contour__input, .contact__fieldset:nth-child(2) .contour__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__fieldset:nth-child(1) label, .contact__fieldset:nth-child(2) label  {
+  text-align: center;
+}
+
+.contact__fieldset input[type=text],  .contact__fieldset input[type=email], select {
+  min-width: 50%;
+  padding: 10px;
+  border: 2px solid rgb(255, 49, 49);
+  border-radius: 7px;
+  box-shadow: none;
+  color: rgb(255, 49, 49);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+select {
+  text-align: center;
+}
+
+.fieldset-contact input[type=text]:hover,  .fieldset-contact input[type=email]:hover,  .fieldset-contact select:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.fieldset-contact input[type=text]:focus,  .fieldset-contact input[type=email]:focus,  .fieldset-contact select:focus {
+  background-color: rgb(235, 235, 235);
+}
+
+.fieldset-contact input[type=radio], input[type=checkbox], select {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: .5em;
+}
+
+.fieldset-contact input[type="file"] {
+  border: none;
+}
+
+.fieldset-contact input[type="checkbox"],  .fieldset-contact input[type="radio"] {
+  width: 30px;
+  height: 20px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  padding: 8px 25px 8px 25px;
+  background-color: rgb(255, 49, 49);
+  border-radius: 7px;
+  color: #fff;
+}
+
+label {
+  display: inline-block;
+  font-size: 18px;
+  width: 200px;
+  padding-right: .3em;
+}
+
+.checkbox__label, .radio__label {
+  text-align: left;
+  padding-right: 0;
+}
+
+.form__envoyer {
+  width: 100%;
+  height: 40px;
+  align-self: flex-end;
+  background-color:rgb(255, 49, 49);
+  padding: 0 50px 0 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top:20px;
+  border-radius:8px;
+  border: rgb(255, 49, 49);
+}
+
+.form__envoyer:hover {
+  background-color: rgb(216, 27, 27);
+  cursor: pointer;
+}
+/* ------------------------------------
+PIED DE PAGE COMMUN
+-------------------------------------- */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  font-size: 16px;
+}
+
+.medias-sociaux, .abonnement-webzine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-top: 50px;
+}
+
+.medias-sociaux ul, .abonnement-webzine h3  {
+  display: flex;
+  justify-content:center;
+  flex-basis: 100%;
+}
+
+.medias-sociaux li {
+  margin:20px;
+}
+
+.abonnement-webzine__form {
+  display: flex;
+  align-items: center;
+}
+
+.abonnement-webzine__input {
+  width: 200px;
+  margin-top:20px;
+  height: 40px;
+  border-radius: 8px 0 0 8px;
+  border: rgb(255, 49, 49);
+}
+
+.abonnement-webzine__envoyer {
+  width: 100px;
+  background-color:rgb(255, 49, 49);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top:20px;
+  height: 40px;
+  border-radius: 0 8px 8px 0;
+  border: rgb(255, 49, 49);
+}
+
+.abonnement-webzine__envoyer:hover {
+  background-color: rgb(216, 27, 27);
+  cursor: pointer;
+}
+
+.abonnement-webzine {
+  flex-basis:  50%;
+}
+
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+}
+
+.footer__img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer small {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .footer {
+    height:300px;
+  }
+
+  .medias-sociaux, .abonnement-webzine {
+    flex-basis: 50%;
+  }
+
+  .abonnement-webzine input[type="text"] {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+   .menu {
+     flex-direction: row;
+   }
+
+   .menu__item {
+      flex-grow: 1; 
+      flex-shrink: 0; 
+      flex-basis: 10%;
+      height: 50px;
+      margin-right:1px;
+   }
+
+   .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .menu__item a:link, .menu__item a:visited {
+    height: 50px;
+  }
+
+  .image-entete img {
+    margin-top: 0;
+  }
+
+  .titre-principal {
+    font-size: 6vw;
+  }
+
+  /* -------------------
+  PAGE ACCUEIL
+  ---------------------- */
+  .article__menu {
+    flex-direction: row;    
+  }
+
+  h4 {
+    font-size: 1.5vw;    
+  }
+  /* -------------------
+  PAGE SUJET
+  ---------------------- */
+
+  article {
+    width: 60%;    
+  }
+
+  /* -------------------
+  PAGE CONTACT
+  ---------------------- */
+  .titre-secondaire {
+    font-size: 3em;
+  }
+
+  .slogan-secondaire {
+    font-size: 2em;
+  }
+
+  .contact__form {
+    width: 60%;
+  }
+
+  .contact__fieldset {
+    align-items: initial;
+  }
+
+  .contact__fieldset:nth-child(1) label, .contact__fieldset:nth-child(2) label  {
+    text-align: right;
+  }
+
+  .contact__fieldset input[type=text],  .contact__fieldset input[type=email], select {
+    font-size: 16px;
+  }
+
+  .form__envoyer {
+    width: 350px;
+  }
+
+  .contact__fieldset:nth-child(1) .contour__input, .contact__fieldset:nth-child(2) .contour__input {
+    display: block;
+    flex-direction: row;
+    align-items: initial;
+  }
+
+}

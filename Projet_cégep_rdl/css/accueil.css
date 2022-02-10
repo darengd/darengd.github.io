@@ -1,0 +1,320 @@
+/***********************************************************************************************
+Nom de la page :  accueil.css
+Description :  feuille de style pour l'interface pour l'accueil
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-04-15
+***********************************************************************************************/
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div
+{
+    width: 100%;
+    height: 1024px;
+}
+
+/* fonts */
+
+p, h1, h2 {color: white;}
+h2 {line-height: 28px;}
+h1
+{
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.page-3 p, .texte-1, .texte-2 {font-family: 'Roboto';}
+
+.commander-breuvage p
+{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+/*******************************/
+
+.page-3 p
+{
+    font-size: 14px;
+    line-height: 20px;    
+}
+
+.premier
+{
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.deuxieme{background-color: #F9D145;}
+
+.troisieme{background-color: #E0905E;}
+
+
+.premier, .deuxieme
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commander-breuvage
+{
+    background-image: url(../images/commander-breuvage-3.jpg);
+    width: 461.28px;
+    height: 467px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 3;
+    margin-left: -30%;
+}
+
+.texte-1
+{
+    width: 554.97px;
+    height: 620px;
+    background-image: url(../images/tache-page-1.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
+
+}
+
+.page-1
+{
+    z-index: 1;
+}
+
+.texte-1 div
+{
+    width: 58%;
+    margin-left:-35%;
+    margin-top: 50%;
+}
+
+.texte-1 p 
+{
+    line-height: 21px;
+}
+
+/*Page 2*/
+.deuxieme-contenu
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texte-2
+{
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contour-3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/tache-page-2-2.svg);
+    background-repeat: no-repeat;
+    width: 530.28px;
+    height: 539px;  
+    margin-left: 55%;
+    margin-top: -35%;
+}
+
+.contour-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/tache-page-2-1.svg);
+    background-repeat: no-repeat;
+    width: 530.28px;
+    height: 539px;  
+    padding-bottom: 10%;
+}
+
+.smoothie-1
+{
+    z-index: 2;
+    margin-left: -10%;
+    margin-top: -5%;
+}
+
+.texte-2 p
+{
+    line-height: 150%; 
+}
+
+.texte-2 h1
+{
+    line-height: 50px; 
+}
+
+.page-2, .page-1, .page-3
+{
+    display: flex;
+    height: 1024px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-2
+{
+    width: 100%;
+    flex-direction: column;
+    height: 1010px;
+}
+
+.texte-2
+{
+    justify-content: center;
+    align-items: center;
+    width: 340.68px;
+    height: 436px;
+}
+
+.page-2 div
+{
+    display: flex;
+}
+
+.page-2 img
+{
+    width: 469.5px;
+    height: 489px;
+}
+
+.bas-page
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    justify-content:flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.bas-page img:first-child
+{
+    margin-bottom: 10px;
+}
+
+.bas-page-2
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: -3%;    
+}
+
+.bas-page-2 img 
+{
+    width: 20px;
+    height: 20px;
+}
+
+.first-image-vector
+{
+    margin-bottom: -8px;
+}
+
+
+
+/*Page 3*/
+.troisieme-contenu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-3
+{
+    width: 100%;
+}
+
+.image-smoothie-fraise
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 1024px;
+}
+
+.conteneur-texte
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texte-difference
+{
+    margin-left: -10%;
+    margin-top: 20%;
+}
+
+.texte-conservation
+{
+    margin-top: 20%;
+    margin-left: -80%;
+}
+
+.texte-verre
+{
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+.texte-difference, .texte-conservation, .texte-verre
+{
+    width: 340.68px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteneur-texte div
+{
+    display: flex;
+}
+
+.bas-page-3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.bas-page-3:hover img
+{
+    animation-name: tourner;
+    animation: tourner 0.5s linear;
+}
+
+

@@ -1,0 +1,142 @@
+<!--  
+/***********************************************************************************************/
+Nom de la page : Juice Box | Accueil
+Description :  Page d'accueil du site
+Auteur : Daren Garneau-Dionne
+Creation/Modification : 2020-04-15
+***********************************************************************************************/
+-->
+<!DOCTYPE html>
+
+<html lang="fr-CA">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <title>Juice Box | Créer un breuvage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/commande.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/positionnement.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+ </head> 
+
+ <body>
+    <header>  
+        <nav>
+            <ul class="menu">
+               <li><a class="a-accueil" href="index.html">Accueil <div class="contour"><img src="images/shop-2.png" alt="accueil"></div></a></li>
+               <li><a class="a-creer" href="commande.html">Créer un breuvage <div class="contour"><img src="images/creer-mon-breuvage.png" alt="creer-mon-breuvage"></div></a></li>
+               <li><a class="a-boire" href="erreur.html">À boire <div class="contour"><img src="images/a-boire@2x.png" alt="a-boire"></div></a></li>
+               <li><a class="a-manger" href="erreur.html">À manger <div class="contour"><img src="images/a-manger.png" alt="a-manger"></div></a></li>
+               <li><a class="a-propos" href="erreur.html">À propos <div class="contour"><img src="images/a-propos.png" alt="a-propos"></div></a></li>
+               <li><a class="a-contact" href="erreur.html">Contact <div class="contour"><img src="images/contact.png" alt="contact"></div></a></li>
+            </ul>
+            <a class="logo" href="#"><img src="images/logo-juice-box@2x.png" alt="logo-juice-box"></a>
+           <ul class="menu">
+               <li><a class="a-recherche" href="erreur.html"><div class="contour"><img src="images/barre-de-recherches.png" alt="barre-de-recherches"></div></a></li>
+           </ul>
+         </nav> 
+    </header>
+
+    <main>
+       <div class="tache"><div class="commander-breuvage"><p>Créer mon breuvage</p></div></div>
+        <form action="get">
+            <select class="format">
+               <option selected disabled value="">Format</option>
+               <option value="">Petit</option>
+               <option value="">Moyen</option>
+               <option value="">Grand</option>
+            </select>
+            <label class="titre-checkbox">Saveurs : 1 à 3 choix</label>
+            <div><label><input type="checkbox"><span></span> Bananes</label></div>
+            <div><label><input type="checkbox"><span></span> Fraises</label></div>
+            <div><label><input type="checkbox"><span></span> Framboises</label></div>
+            <div><label><input type="checkbox"><span></span> Kiwis</label></div>
+            <div><label><input type="checkbox"><span></span> Mangues</label></div>
+            <div><label><input type="checkbox"><span></span> Oranges</label></div>
+            <div><label><input type="checkbox"><span></span> Épinards</label></div>
+            <div><label><input type="checkbox"><span></span> Bleuets</label></div>
+            <div><label><input type="checkbox"><span></span> Matcha</label></div>
+            <div><label><input type="checkbox"><span></span> Thé Vert</label></div>
+            <div><label><input type="checkbox"><span></span> Café</label></div>
+            <div><label><input type="checkbox"><span></span> Chocolat</label></div>
+            <div><label><input type="checkbox"><span></span> Caramel</label></div>
+            <label class="titre-checkbox">Liquide : 1 à 2 choix</label>
+            <div><label><input type="checkbox"><span></span> Lait</label></div>
+            <div><label><input type="checkbox"><span></span> Boisson de soya</label></div>
+            <div><label><input type="checkbox"><span></span> Boisson d’amande</label></div>
+            <div><label><input type="checkbox"><span></span> Boisson d’avoine</label></div>
+            <div><label><input type="checkbox"><span></span> Lait de coco</label></div>
+            <div><label><input type="checkbox"><span></span> Jus de fruit</label></div>
+            <div class="div-prix"><label>Estimation du prix</label><label>___$</label></div>
+            <div><label>Votre nom:</label><input class="nom" type="text"></div>
+            <select name="" id="">
+               <option selected disabled value="">Je passerai prendre mon breuvage à : </option>
+               <option value="">9h00</option>
+               <option value="">10h00</option>
+            </select>
+            <button class="passer-commande" type="submit">Passer ma commande</button>
+
+        </form>
+    </main>
+
+    <footer>
+      <div class="infolettre">
+         <p class="titre-infolettre">Votre infolettre personnalisée</p>
+         <p class="titre-infolettre">Recevez chaque semaine des conseils sur mesure.</p>
+         <input class="courriel-infolettre" type="email"> <button class="btn-infolettre" type="submit">S'ABONNER</button>
+         <div class="politique-confidentalite">
+            <p class="politique-confidentalite">
+            En vous inscrivant à notre infolettre, vous acceptez notre </p><a href="">Politique de confidentialité</a> 
+            </p>            
+         </div>
+      </div>
+      <div class="millieu-footer">
+      <div class="information-shop">
+            <img src="images/shop-2@3x.png" alt="shop-2">
+            <div class="horaire">
+             <p>lundi : 8 h à 18 h</p> 
+             <p>mardi : 8 h à 18 h</p> 
+             <p>mercredi : 10 h à 19 h</p> 
+             <p>jeudi : 9 h à 20 h</p> 
+             <p>vendredi : 9 h à 20 h</p> 
+             <p>samedi : 8 h à 17 h</p> 
+             <p>dimanche : 9 h à 15 h</p> 
+           </div>
+        </div>
+        <div class="reseau-adresse">
+        <div class="div-reseaux-sociaux">
+              <p class="texte-reseaux-sociaux">Retrouvez-nous sur les réseaux sociaux</p>
+              <div>
+                 <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                 <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+              </div>
+           </div>   
+           <div class="div-adresse">
+              <div><img src="images/carte.png" alt="carte">
+                 <p>
+                    123, rue de la Rivière
+                    Ville (Québec)
+                    G1R 1S1
+                 </p>
+              </div>
+              <div><img src="images/telephone.png" alt="telephone">
+                 <p>
+                    418 862-6262
+                 </p> 
+              </div>   
+           </div>              
+        </div>
+ 
+      </div>
+      <div class="footer-fin"> 
+        <p>© Juice box, 2020. </p>
+        <p>Graphistes : Marie Piel et Cléo Martine.</p>
+        <p>Intégrateur web: Daren Garneau-Dionne</p>
+      </div>
+   </footer>    
+ </body>  
+</html>

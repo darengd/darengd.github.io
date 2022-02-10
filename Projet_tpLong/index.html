@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+    <meta name="description" content="Mieux comprendre les dangers potentielles des conditions météorologique sur les routes aux Canada">
+    <meta name="keywords" content="">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>Accueil - Info Météo</title> 
+</head>
+<body class="accueil">
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a class="nav__lien" href="index.html">Infos Météo</a></li>
+                <li class="menu__item"><a class="nav__lien" href="#">Articles</a>
+                    <ul class="sous-menu">
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-la-grele.html">La grêle</a></li>
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-la-neige.html">La neige</a></li>
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-la-pluie.html">La pluie</a></li>
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-inondation.html">Les inondations</a></li>
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-le-vent.html">Le vent</a></li>
+                        <li class="sous-menu__item"><a class="item__lien" href="html/article-les-orages.html">Les orages</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__item" href="html/apropos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__item" href="html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="titre-principal">Infos météo</h1>
+        <p class="slogan">Tout sur les conditions météorologiques</p>
+
+        <picture class="image-entete">
+            <source media="(min-width:1920px)" srcset="images/accueil-entete_w1920.jpg">
+            <source media="(min-width:1024px)" srcset="images/accueil-entete_w1024.jpg">
+            <source media="(min-width:500px)" srcset="images/accueil-entete_w500.jpg">
+            <img src="images/accueil-entete_w1920.jpg" alt="un garage enneigé">
+        </picture>  
+     </header>      
+    <main class="main-accueil">
+        <ul class="article__menu">
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-la-grele.html"><div class="menu-article__bloc-titre"><h4>La grêle</h4></div><img class="menu-article__img" src="images/article-entete-grele_w1920.jpg" alt="article sur la grele"></a></li>
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-la-neige.html"><div class="menu-article__bloc-titre"><h4>La neige</h4></div><img class="menu-article__img" src="images/article-entete-neige_w1920.jpg" alt="article sur la neige"></a></li>
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-la-pluie.html"><div class="menu-article__bloc-titre"><h4>La pluie</h4></div><img class="menu-article__img" src="images/article-entete-pluie_w1920.jpg" alt="article sur la pluie"></a></li>
+        </ul>
+        <ul class="article__menu">
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-inondation.html"><div class="menu-article__bloc-titre"><h4>Les inondation</h4></div><img class="menu-article__img" src="images/article-entete-inondation_w1920.jpg" alt="article sur les inondations"></a></li>
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-le-vent.html"><div class="menu-article__bloc-titre"><h4>Le vent</h4></div><img class="menu-article__img" src="images/article-entete-vent_w1920.jpg" alt="article sur le vent"></a></li>
+            <li class="menu-article__item"><a class="menu-article__lien" href="html/article-les-orages.html"><div class="menu-article__bloc-titre"><h4>Les orages</h4></div><img class="menu-article__img" src="images/article-entete-orages_w1920.jpg" alt="article sur les orages"></a></li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div></div>
+        <div class="medias-sociaux">
+            <h3>Nos médias sociaux</h3>
+            <ul class="footer__menu">
+                <li class="footer__item"><a class="footer__lien" href="https://fr-ca.facebook.com/"><img class="footer__img" src="images/facebook.png" alt="Facebook"></a></li>
+                <li class="footer__item"><a class="footer__lien" href="#section2"><img class="footer__img" src="images/instagram.png" alt="Instagram"></a></li>
+                <li class="footer__item"><a class="footer__lien" href="#section3"><img class="footer__img" src="images/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+        <div class="abonnement-webzine">
+            <h3>Abonnement</h3>
+            <form class="abonnement-webzine__form" action="#">
+                <input class="abonnement-webzine__input" type="email" placeholder="  Inscrire votre courriel"><input class="abonnement-webzine__envoyer" type="submit" value="Envoyer">            
+            </form>
+        </div>
+        <small>&#169; 2021 Daren Garneau-Dionne</small>
+    </footer>       
+</body>
+
+
+</html>

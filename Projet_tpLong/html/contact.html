@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png"/>
+    <meta name="description" content="Mieux comprendre les dangers potentielles des conditions météorologique sur les routes aux Canada">
+    <meta name="keywords" content="">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>Contact - Info Météo</title> 
+</head>
+<body class="contact">
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a class="item__lien" href="../index.html">Infos Météo</a></li>
+                <li class="menu__item"><a class="item__lien" href="#">Articles</a>
+                    <ul class="sous-menu">
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-la-grele.html">La grêle</a>
+                        </li>
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-la-neige.html">La neige</a>
+                        </li>
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-la-pluie.html">La pluie</a>
+                        </li>
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-inondation.html">Les inondations</a>
+                        </li>
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-le-vent.html">Le vent</a>
+                        </li>
+                        <li class="sous-menu__item">
+                            <a class="item__lien" href="article-les-orages.html">Les orages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="item__lien" href="apropos.html">À propos</a></li>
+                <li class="menu__item"><a class="item__lien" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>  
+        <picture class="image-entete">
+            <source media="(min-width:1920px)" srcset="../images/contact_w1920.jpg">
+            <source media="(min-width:1024px)" srcset="../images/contact_w1024.jpg">
+            <source media="(min-width:500px)" srcset="../images/contact_w500.jpg">
+            <img src="../images/contact_w1920.jpg" alt="neige-quebec">
+        </picture>                  
+    </header>
+    <main class="contact__main">
+        <p class="slogan-secondaire">Vous souhaitez vous joindre à notre équipe?</p>
+        <h2 class="titre-secondaire">Contactez-nous!</h2> 
+
+        <form class="contact__form" action="mailto:darengd@outlook.com" method="POST">
+            <fieldset class="contact__fieldset">
+                <legend>Identification</legend>
+                <div class="contour__input">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" >                 
+                </div>
+                <div class="contour__input">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" >                                       
+                </div>
+
+            </fieldset>
+
+            <fieldset class="contact__fieldset">
+                <legend>Adresse</legend>
+                <div class="fieldset-contact-interieur">
+                    <div class="contour__input">
+                        <label for="rue">Rue</label>
+                        <input type="text" id="rue" name="rue" >                    
+                    </div>
+                    <div class="contour__input">
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville" name="ville" >                    
+                    </div>
+                    <div class="contour__input">
+                        <label for="province">Province</label>
+                        <select name="province" id="province">
+                            <option class="selectionner__option" value="" selected disabled hidden>--------Sélectionner--------</option>
+                            <option value="quebec">Québec</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="colombie-brittanique">Colombie-Brittanique</option>
+                            <option value="manitoba">Manitoba</option>
+                        </select>                    
+                    </div>
+                    <div class="contour__input">
+                        <label for="code-postal">Code postal</label>
+                        <input type="text" id="code-postal" name="code-postal" >                    
+                    </div>
+                    <div class="contour__input">
+                        <label for="courriel">Courriel</label>
+                        <input type="email" id="courriel" name="courriel" >                    
+                    </div>                    
+                </div>
+
+
+            </fieldset>
+
+            <fieldset class="contact__fieldset">
+                <legend>Langue de communication</legend>
+                <div class="contour__input">
+                    <input type="radio" id="francais" name="langue" value="Français">
+                    <label class="radio__label" for="francais">Français</label>                   
+                </div>  
+                <div class="contour__input">
+                    <input type="radio" id="anglais" name="langue" value="Anglais">
+                    <label class="radio__label" for="anglais">Anglais</label>                 
+                </div>  
+
+            </fieldset>
+
+            <fieldset class="contact__fieldset">
+                <legend>J'aimerais collaborer dans la ou les rubriques suivantes</legend>
+                <div class="contour__input">
+                    <input type="checkbox" id="la-grele" name="la-grele" value="La grêle">
+                    <label class="checkbox__label" for="la-grele"> La grêle</label>                    
+                </div>
+
+                <div class="contour__input">
+                    <input type="checkbox" id="la-neige" name="la-neige" value="La neige">
+                    <label class="checkbox__label" for="la-neige"> La neige</label>                    
+                </div>
+
+                <div class="contour__input">
+                    <input type="checkbox" id="la-pluie" name="la-pluie" value="La pluie">
+                    <label class="checkbox__label" for="la-pluie"> La pluie</label>                    
+                </div>
+
+                <div class="contour__input">
+                    <input type="checkbox" id="les-inondations" name="les-inondations" value="les-inondations">
+                    <label class="checkbox__label" for="les-inondations"> Les inondations</label>                    
+                </div>
+
+                <div class="contour__input">
+                    <input type="checkbox" id="le-vent" name="le-vent" value="Le vent">
+                    <label class="checkbox__label" for="le-vent"> Le vent</label>                    
+                </div>
+
+                <div class="contour__input">
+                    <input type="checkbox" id="les-orages" name="les-orages" value="Les orages">
+                    <label class="checkbox__label" for="les-orages"> Les orages</label>                    
+                </div>
+
+            </fieldset>
+
+            <fieldset class="contact__fieldset">
+                <legend>Expliquez ce qui vous incite à joindre notre équipe</legend>
+                <textarea name="explication" id="explication" cols="30" rows="10">Explication:</textarea>
+            </fieldset>
+
+            <fieldset class="contact__fieldset">
+                <legend>Faites parvenir votre cv au format pdf:</legend>
+                <input type="file">
+            </fieldset>
+            <input class="form__envoyer" type="submit" value="Soumettre votre candidature">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div></div>
+        <div class="medias-sociaux">
+            <h3>Nos médias sociaux</h3>
+            <ul class="footer__menu">
+                <li class="footer__item"><a class="footer__lien" href="https://fr-ca.facebook.com/"><img class="footer__img" src="../images/facebook.png" alt="Facebook"></a></li>
+                <li class="footer__item"><a class="footer__lien" href="#section2"><img class="footer__img" src="../images/instagram.png" alt="Instagram"></a></li>
+                <li class="footer__item"><a class="footer__lien" href="#section3"><img class="footer__img" src="../images/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+        <div class="abonnement-webzine">
+            <h3>Abonnement</h3>
+            <form class="abonnement-webzine__form" action="#">
+                <input class="abonnement-webzine__input" type="email" placeholder="  Inscrire votre courriel"><input class="abonnement-webzine__envoyer" type="submit" value="Envoyer">            
+            </form>
+        </div>
+        <small>&#169; 2021 Daren Garneau-Dionne</small>
+    </footer>   
+</body>
+</html>

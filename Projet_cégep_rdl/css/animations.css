@@ -1,0 +1,25 @@
+/***********************************************************************************************
+Nom de la page :  animations.css
+Description :  feuille de style pour les animations
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-05-13
+***********************************************************************************************/
+ul a:hover
+{
+    height: 230px;
+}
+
+.commander-breuvage:hover
+{
+    opacity: 70%;
+}
+
+@keyframes tourner
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}

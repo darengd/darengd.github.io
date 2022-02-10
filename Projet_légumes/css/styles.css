@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+:root {
+    font-family: "Century Gothic", "Helvetica", "Arial", sans-serif;
+    font-size: 1.05em;
+    color: #333;
+}
+
+/* REINITIALISATION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MENU ET LIENS */
+.menu {
+
+    list-style: none;
+}
+
+.menu__lien:visited, 
+.menu__lien:link {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding: 0.6em 0.6em 0;
+}
+
+.menu__item:first-child .menu__lien:hover,
+.menu__item:first-child .menu__lien:active {
+    color: rgb(6, 185, 0);
+    background-image: url(../images/laitue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu__item:nth-child(2) .menu__lien:hover,
+.menu__item:nth-child(2) .menu__lien:active {
+    color: rgb(233, 37, 2);
+    background-image: url(../images/tomate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu__item:nth-child(3) .menu__lien:hover,
+.menu__item:nth-child(3) .menu__lien:active {
+    color: rgba(255, 221, 28, 0.931);
+    background-image: url(../images/oignon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu__item:nth-child(4) .menu__lien:hover,
+.menu__item:nth-child(4) .menu__lien:active {
+    color: rgba(255, 157, 28, 0.931);
+    background-image: url(../images/carotte.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+/* Decoration des conteneurs principaux */
+
+.page {
+    padding:  0.2em; /* ajoute un espace tout autour de la page */
+    max-width: 800px; /* largeur fluide limitee */
+     margin: auto; /* auto left et right pour centrer la page */
+}
+
+.header,
+.nav,
+.contenu-principal,
+.contenu-secondaire,
+.footer { /* mise en forme des conteneurs principaux */
+    padding:.7em;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #444;
+    margin:.2em;
+}
+/* header */
+.header {
+    text-align: center;
+}
+
+/* titre du site */
+.header__nom-du-site {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* contenu principal */
+.contenu-principal-h1 {
+    font-size: 1.5em;
+    padding-bottom: .3em;
+}
+
+.contenu-principal__p {
+    padding-bottom: .7em;
+}
+
+/* contenu secondaire */
+.contenu-secondaire__h2 {
+    font-size: 1.05em;
+    padding-bottom: .2em;
+}
+
+.contenu-secondaire__p {
+    font-size: .75em;
+    padding-bottom: .5em;
+}
+
+/* FIGURE ET IMAGES */
+.figure {
+    float: right;
+    margin-bottom: .4em;
+}
+
+.figure_figcaption {
+    font-size: .7em;
+    text-align: center;
+}
+
+/* FLEXBOX */
+/* page */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* conteneur */
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.nav, 
+.contenu-secondaire {
+    flex:0 0 auto;
+}
+
+.contenu-principal {
+    flex: 1 1 auto;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+}
+
+@media (min-width:700px) {
+    .conteneur {
+        flex-direction: row;
+        flex: 1 1 auto;
+    }
+
+    .nav {
+        flex: 0 0 10em;
+    }
+
+    .contenu-secondaire {
+        flex: 0 0 10em;
+    }
+
+    .contenu-principal {
+        flex: 1 1 0;
+    }
+}

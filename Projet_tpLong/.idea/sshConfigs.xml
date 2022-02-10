@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="timunix2.csfoy.ca" id="e018409b-4bd9-4ef3-ba81-43bfbd8c74ad" port="22" nameFormat="DESCRIPTIVE" username="dgdionne" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

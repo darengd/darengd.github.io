@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/nuages.css" rel="stylesheet" type="text/css" media="all">
+    <title>Accueil - Daren Garneau-Dionne </title>    
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu" cl>
+                <li class="menu__item"><a href="#">Mon portail</a></li>
+                <li class="menu__item"><a href="javascript:void(0);" onclick="fermerSousMenu()">Session I <span id="span-fleche" class="span-fleche"><img id="fleche" class="fleche" src="images/angle-arrow-down.png" alt="fleche">
+                </span></a>
+                    <ul id="sous__menu" class="sous__menu">
+                        <li class="sous-menu__item"><a href="Projet_légumes/carotte.html">Projet légumes</a></li>
+                        <li class="sous-menu__item"><a href="Projet_cégep_rdl/index.html">Projet cégep RDL</a></li>
+                        <li class="sous-menu__item"><a href="Projet tp8/index.html">Projet TP8</a></li>
+                        <li class="sous-menu__item"><a href="Projet_tpLong/index.html">Projet TP Long</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#">Session II<span id="span-fleche" class="span-fleche"><img id="fleche" class="fleche" src="images/angle-arrow-down.png" alt="fleche"></span></a></li>
+                <li class="menu__item"><a href="#">Session III<span id="span-fleche" class="span-fleche"><img id="fleche" class="fleche" src="images/angle-arrow-down.png" alt="fleche"></span></a></li>
+            </ul>   
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="gauche">
+                    <div id="background-wrap">
+                        <div class="x1">
+                            <div class="cloud"></div>
+                        </div>
+                    
+                        <div class="x2">
+                            <div class="cloud"></div>
+                        </div>
+                    
+                        <div class="x3">
+                            <div class="cloud"></div>
+                        </div>
+                    
+                        <div class="x4">
+                            <div class="cloud"></div>
+                        </div>
+                    
+                        <div class="x5">
+                            <div class="cloud"></div>
+                        </div>
+                </div>
+                <a class="profil__lien" href=""><img class="profil__img" src="https://pbs.twimg.com/profile_images/1447595354308980742/-gr-tH2C_400x400.jpg" alt="">   </a>
+                <h1 class="titre-principal">Daren Garneau Dionne</h1>     
+            </div>
+            <div class="separateur"></div>
+            <article>
+                <img class="coffee" src="images/Coffee.svg" alt="café">
+                <img class="coffee-clay" src="images/Coffee-clay.svg" alt="coffee-clay">
+                <img class="moon" src="images/moon.svg" alt="lune">
+                <img class="full-moon" src="images/full_moon.svg" alt="pleine lune">
+                <h2>Mes Projets</h2>
+                <h3>Automne 2021</h2>
+                    <div class="point"></div>
+                    <div class="ligne"></div>
+                    <div class="point"></div>
+                <div class="projet">
+                    <a class="projet__lien" href="Projet_légumes/carotte.html">Projet Légumes</a>
+                </div>
+                    <div class="point"></div>
+                    <div class="ligne"></div>
+                    <div class="point"></div>
+                <div class="projet">
+                    <a class="projet__lien" href="Projet_tpLong/index.html">Projet Long</a>
+                </div>
+                    <div class="point"></div>
+                    <div class="ligne"></div>
+                    <div class="point"></div>
+                <h3>Hiver 2022</h2>
+                
+            </article>
+
+        </main>
+    </body>
+
+    <script>
+        function fermerSousMenu() {
+          var x = document.getElementById("sous__menu");
+          if (x.style.display === "inline-block") {
+            x.style.display = "none";
+            document.getElementById("fleche").style.transform="rotate(0deg)";
+          } else {
+            x.style.display = "inline-block";
+            document.getElementById("fleche").style.transform ="rotate(180deg)";
+          }
+        }
+        </script>
+
+</html>

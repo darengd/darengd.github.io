@@ -1,0 +1,68 @@
+/***********************************************************************************************
+Nom de la page :  commande.css
+Description :  feuille de style pour l'interface pour la page commande
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-05-13
+***********************************************************************************************/
+
+/* Les fonts de commande */
+
+label, input.nom
+{
+  font-family: Roboto;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+/* Les éléments du main */
+
+main
+{
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.tache
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 562px;
+  height: 620px;
+  background-image: url(../images/vector-commande.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  margin-left: -5%;
+}
+
+.commander-breuvage p
+{
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+.commander-breuvage
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 461.28px;
+  height: 467px;
+  background-image: url(../images/commander-breuvage-3.jpg);
+  background-repeat: no-repeat;
+  margin-right: -20%;
+  margin-top: -8%;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+
+

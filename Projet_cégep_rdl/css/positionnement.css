@@ -1,0 +1,111 @@
+/***********************************************************************************************
+Nom de la page :  positionnement.css
+Description :  feuille de style pour le positionnement
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-05-13
+***********************************************************************************************/
+
+@media screen and (max-width: 1134px) 
+{
+    main 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premier
+    {
+        height: 1000px;
+    }
+
+    .deuxieme, .troisieme
+    {
+        height: 1494px;
+    }
+
+    .page-1
+    {
+        align-items: flex-start;
+    }
+
+    .commander-breuvage
+    {
+        width: 309.38px;
+        height: 313.21px;
+        margin-left: -45%;
+    }
+
+    .bas-page, .bas-page-2, .bas-page-3
+    {
+        display: none;
+    }
+    
+    .texte-1, .contour-3
+    {
+        background-size: 80%;
+    }
+
+    .texte-1 div 
+    {
+        margin-left: 40%;
+        margin-top: 90%;
+    }  
+
+    /*Page 2*/
+    
+    .contour-2
+    {
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+
+    .smoothie-1
+    {
+        margin-left: -33%;
+        margin-top: 50%;
+    }
+
+    .contour-3
+    {
+        margin-top: -10%;
+        margin-left: -10%;
+    }
+
+    /*Page-3*/
+
+    .image-smoothie-fraise
+    {
+        margin-left: 1%;
+    }
+
+
+}
+
+@media screen and (max-width: 610px) 
+{
+    main div
+    {
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    h2 
+    {
+        width: 40%;
+        margin-top: -130%;
+        order: 2;
+    }
+
+    .orange
+    {
+        width: 23%;
+        margin-top: 60%;
+    }
+
+    .verre
+    {
+        width: 25%;
+        margin-right: 0%;
+    }
+}

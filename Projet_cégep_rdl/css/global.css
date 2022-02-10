@@ -1,0 +1,341 @@
+/***********************************************************************************************
+Nom de la page :  global.css
+Description :  feuille de style pour l'interface pour les élements globals
+Auteur : Daren Garneau-Dionne
+Creation/Modification :  2020-04-15
+***********************************************************************************************/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    width: 100%;
+    background-color: #503888;
+}
+
+/* les fonts */
+
+a,h1,h2, .commander-breuvage {font-family: 'Manjari';}
+p, h1, h2, .passer-commande {color: white;}
+
+button
+{
+    font-weight: 900;
+    font-size: 13px;
+}
+
+
+.titre-infolettre, .texte-reseaux-sociaux, .horaire p, input, .div-adresse, h2
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.politique-confidentalite, .infolettre a
+{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 0.5%;
+}
+
+.infolettre a
+{
+    font-family: Roboto;
+    margin-left: 3px;
+    text-decoration: underline;
+}
+
+.infolettre a:hover
+{
+    color: rgb(39, 111, 255);
+}
+
+.millieu-footer, input, .titre-infolettre, .footer-fin p {font-family: 'Manjari';}
+
+button, .politique-confidentalite {font-family: 'Roboto';}
+
+footer p, a {color: black;}
+a
+{
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.btn-infolettre
+{
+    width: 223px;
+    height: 52px;
+    background-color: #FEE0A5;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.courriel-infolettre
+{
+    border: 2px solid #000000;
+    width: 60%;
+    height: 52px;
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+
+/* Les elements du header*/
+
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-tablette
+{
+    display: none;
+}
+
+
+/* Les elements du footer */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.infolettre
+{
+    display: block;
+    justify-content: center;
+    width: 75%;
+    padding:2% 5% 2% 5%;
+}
+
+.millieu-footer
+{
+    display: flex;
+    width: 85%;
+    height: 340px;
+    align-items: center;
+}
+
+.reseau-adresse
+{
+    width: 50%;
+    height: 300px;
+    display: flex;
+}
+
+.footer-fin
+{
+    width: 85%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Elements du milieu-footer */
+.information-shop
+{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-reseaux-sociaux
+{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.div-reseaux-sociaux p 
+{
+    width: 80%;
+}
+
+.div-reseaux-sociaux div
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.div-adresse
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.div-adresse div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.div-adresse p
+{
+    width: 70%;
+}
+
+.information-shop, .infolettre, .footer-fin, .div-adresse, .div-reseaux-sociaux
+{
+    background-color:#F9D145;
+}
+
+/* Les balise img du footer */
+
+.information-shop img
+{
+    width: 190px;
+    height: 190px;
+}
+
+.div-adresse img
+{
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 1134px)
+{
+    header
+    {
+        flex-direction: column;
+    }
+
+    nav 
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .logo-tablette
+    {
+        margin-top: 50px;
+        display: block;
+    }
+
+    ul
+    {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .a-recherche
+    {
+        display: none;
+    }
+
+    .infolettre button
+    {
+        margin-top: 10px;
+    }
+
+    .infolettre input, .infolettre button
+    {
+        width: 100%;
+    }
+
+    .millieu-footer
+    {
+        flex-direction: column;
+        height: 660px;
+    }
+
+    .information-shop
+    {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .reseau-adresse
+    {
+        width: 100%;
+    }
+
+    .div-reseaux-sociaux
+    {
+        width:40%;
+        margin-left: 0;
+    }
+
+    .div-adresse
+    {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 610px) 
+{
+    footer 
+    {
+        width: 100%;
+    }
+
+    .infolettre
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .infolettre input, .infolettre button, .infolettre p
+    {
+        width: 95%;
+    }
+
+    .infolettre button
+    {
+        margin-top: 10px;
+    }
+
+    .information-shop img
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .div-adresse img, .div-reseaux-sociaux img
+    {
+        width: 30px;
+        height: auto;
+    }
+
+    .millieu-footer
+    {
+        width: 100%;
+    }
+
+    .footer-fin
+    {
+        width: 100%;
+    }
+
+}
