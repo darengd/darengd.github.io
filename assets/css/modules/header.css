@@ -20,7 +20,7 @@ header {
   pointer-events: all;
   box-sizing: border-box;
 
-  @media screen {
+  @media (min-width: 700px) {
     margin: 0 auto;
     width: 90%;
     max-width: 1500px;

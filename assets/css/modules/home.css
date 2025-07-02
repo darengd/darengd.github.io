@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/caviar-dreams');
 
 :root {
   --accent1: #ffb37b; /* cuivre clair */
@@ -43,7 +44,65 @@ main {
 }
 
 .section {
-  margin: 0 auto;
+  padding-left: 10%;
+  margin: 32px auto;
   max-width: 1500px;
   width: 90%;
+
+  .les-projets {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    .un-projet {
+      width: 100%;
+      display: flex;
+      div {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: hsla(0, 0%, 100%, 0.05);
+        border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+.banderole {
+  margin: 32px 0;
+  width: 100vw;
+  overflow: hidden;
+  background: rgba(17, 16, 16, 0.95);
+  padding: 1.6rem 0;
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: 700px) {
+    padding: 2rem 0;
+  }
+}
+.banderole-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+.banderole-texte {
+  font-family: 'Safiro', 'Montserrat', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent1);
+  display: inline-block;
+  white-space: nowrap;
+  text-shadow: none;
+  margin-right: 3rem;
+
+  @media (min-width: 700px) {
+    font-size: 2.4rem;
+  }
+}
+
+@font-face {
+  font-family: 'Safiro';
+  src: url('../../font/safiro-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

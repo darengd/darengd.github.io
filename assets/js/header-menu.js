@@ -22,4 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
+  // Animation banderole GSAP - file d'attente infinie
+  const banderoleInner = document.querySelector('.banderole-inner');
+  if (banderoleInner && typeof gsap !== 'undefined') {
+    let x = 0;
+    let vitesse = 60; // pixels par seconde
+    function animateMarquee() {
+      const raf = () => {
+        const premier = banderoleInner.children[0];
+        const premierLargeur = premier.offsetWidth + parseInt(getComputedStyle(premier).marginRight);
+        x -= vitesse / 60; // 60 FPS
+        if (x <= -premierLargeur) {
+          x += premierLargeur;
+          banderoleInner.appendChild(premier);
+        }
+        gsap.set(banderoleInner, { x });
+        requestAnimationFrame(raf);
+      };
+      raf();
+    }
+    animateMarquee();
+    window.addEventListener('resize', () => { x = 0; });
+  }
 }); 
