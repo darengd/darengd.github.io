@@ -26,10 +26,21 @@
                 background: hsla(0, 0%, 100%, 0.05);
                 border-radius: 50rem;
                 box-sizing: border-box;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: hsla(0, 0%, 100%, 1);
+
+                    i {
+                        color: #1e1e1e;
+                    }
+                }
 
                 i {
                   font-size: 1.2rem;
                   color: white;
+                  transition: all 0.3s ease-in-out;
                 }
             }
         }
