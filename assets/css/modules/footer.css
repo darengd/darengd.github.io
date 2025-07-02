@@ -1,0 +1,23 @@
+.footer {
+    padding: 1rem;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    background: hsla(0, 0%, 100%, 0.05);
+    border-radius: 2.5rem;
+
+    .les-medias {
+        .un-media {
+            a {
+                display: flex;
+                width: 40px;
+                aspect-ratio: 1/1;
+
+                i {
+                  font-size: 40px;
+                  color: white;
+                }
+            }
+        }
+    }
+}

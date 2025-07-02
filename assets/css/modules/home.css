@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --accent1: #ffb37b; /* cuivre clair */
+  --accent2: #ff7e47; /* cuivre orangé */
+  --accent3: #e07a5f; /* cuivre foncé */
+  --glass-bg: rgba(24, 22, 23, 0.55);
+  --glass-border: rgba(255, 179, 123, 0.25);
+  --shadow: 0 8px 32px 0 rgba(255, 179, 123, 0.10);
+  --text-main: hsl(18, 47%, 90%);
+  --text-accent: var(--accent1);
+  --text-secondary: #A1A1A1;
+  --bg-main: #000000;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-main);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--text-main);
+  letter-spacing: 0.01em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero {
+  margin: 32px auto;
+  max-width: 1500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 30%);
+  aspect-ratio: 16/9;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 90%;
+}

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Mobile first */
+header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}
+.main-nav {
+  margin: 0 auto;
+  background: hsla(0, 0%, 100%, 0.05);
+  border-radius: 0 0 1.5rem 1.5rem;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  pointer-events: all;
+  box-sizing: border-box;
+
+  @media screen {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 2.5rem;
+    margin: 1.2rem auto 0 auto;
+    padding: 0.8rem;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 0.7rem;
+  text-align: left;
+}
+.logo-title {
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+.logo-sub {
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #A1A1A1;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  line-height: 1.1;
+}
+
+.menu-desktop {
+  display: none;
+}
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background: rgba(17, 16, 16, 0.98);
+  border: 1px solid var(--accent1);
+  width: 70vw;
+  max-width: 320px;
+  height: calc(100vh - 60px);
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  z-index: 150;
+  animation: slideIn 0.3s;
+  display: none;
+}
+.menu-mobile.open {
+  display: flex;
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.menu-mobile li {
+  list-style: none;
+}
+.menu-mobile a {
+  color: var(--text-main);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 200;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--accent1);
+  border-radius: 1px;
+  transition: transform 0.3s, opacity 0.3s, background 0.3s;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Desktop/tablette : à partir de 701px */
+@media (min-width: 701px) {
+
+  .menu-desktop {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    .item {
+      a {
+        color: var(--text-main);
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .menu-mobile,
+  .menu-mobile.open {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo-title { font-size: 1.25rem; }
+  .logo-sub { font-size: 1rem; }
+}
+
+/* Styles pour l'en-tête (header) à ajouter ici */ 
+@media (max-width: 800px) {
+  .main-nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (min-width: 801px) {
+  .menu-mobile {
+    display: none;
+  }
+} 
