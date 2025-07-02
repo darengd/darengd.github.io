@@ -1,4 +1,8 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     max-width: 1500px;
     width: 90%;
@@ -7,17 +11,32 @@
     border-radius: 2.5rem;
 
     .les-medias {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+
         .un-media {
             a {
                 display: flex;
-                width: 40px;
-                aspect-ratio: 1/1;
+                justify-content: center;
+                align-items: center;
+                width: 2.8rem;
+                height: 2.8rem;
+                background: hsla(0, 0%, 100%, 0.05);
+                border-radius: 50rem;
+                box-sizing: border-box;
 
                 i {
-                  font-size: 40px;
+                  font-size: 1.2rem;
                   color: white;
                 }
             }
         }
+    }
+
+    .credit {
+        font-size: 0.9rem;
+        color: hsla(0, 0%, 100%, 0.7);
     }
 }
